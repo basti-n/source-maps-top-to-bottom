@@ -1,0 +1,29 @@
+{
+  "name": "source-map-top-to-bottom",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Building a source map ",
+  "main": "compiler/index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "node --experimental-modules compiler/index.mjs",
+    "server": "node --experimental-modules server.mjs",
+    "start": "npm run compile & npm run server"
+  },
+  "keywords": [
+    "source",
+    "map",
+    "js",
+    "ast"
+  ],
+  "author": "Sebastian Neumair",
+  "license": "ISC",
+  "dependencies": {
+    "abstract-syntax-tree": "^2.7.0",
+    "express": "^4.17.1",
+    "source-map": "^0.7.3"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.5"
+  }
+}
